@@ -29,6 +29,7 @@
 #titulo {
     text-decoration: none;
     font-weight: bold;
+    padding: 0 20px;
 }
 
 header {
@@ -37,7 +38,7 @@ header {
 /*     margin: -1;
     padding: -1; */
     grid-area: header;
-
+    padding: 10px 0px;
 }
 
 .img1 {
@@ -70,6 +71,11 @@ nav ul {
 
 li a {
     text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+li a:hover {
+    color: white;
 }
 
 .referencia {
@@ -167,11 +173,14 @@ button {
 
 .interlineado {
     line-height: 0.8;
+    
 }
 
 .section {
     grid-area: section;
+    padding: 10px 20px;
 }
+
 .form {
     grid-area: form;
     display: flex;
@@ -185,6 +194,16 @@ footer {
     flex-direction: column;
 }
 
+footer a {
+    text-decoration: none;
+    margin: 0px 3px;
+    transition: color 0.3s ease;
+}
+
+footer a:hover {
+    color:white
+
+}
 
 
 @media screen and (max-width: 480px) {
