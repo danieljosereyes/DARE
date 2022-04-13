@@ -6,7 +6,7 @@
     
 }
 
-.body_index {
+/* .body_index {
     margin: 0;
     display: grid;
     grid-template-columns: 300px 300px 300px 300px;
@@ -21,7 +21,7 @@
     "section section form form"
     "footer footer footer footer"
     ;
-}
+} */
 
 
 
@@ -42,14 +42,14 @@ header {
 }
 
 .img1 {
-    width: 1200px;
+/*     width: 1200px; */
     grid-area: img1;
     margin: 0 auto;
 
 }
 
 .img1 img{
-    width: 1200px;
+/*     width: 1200px; */
 }
 
 
@@ -92,7 +92,7 @@ li a:hover {
 
 .referencia--titulo {
     margin: 0;
-    width: 300px;
+/*     width: 300px; */
     height: 33px;
     background-color: rgb(207, 207, 207);
     color: black;
@@ -105,7 +105,7 @@ li a:hover {
 
 .referencia--telefono {
     background-color: grey;
-    width: 300px;
+/*     width: 300px; */
     height: 29px;
 /*     padding-left: 100px; */
     padding-top: 5px;
@@ -114,7 +114,7 @@ li a:hover {
 
 .referencia--contacto {
     background-color: rgb(46, 46, 46);
-    width: 300px;
+/*     width: 300px; */
 /*     padding-left: 100px; */
     padding-top: 5px;
     text-align: center;
@@ -149,7 +149,7 @@ button {
     text-align: center;
     display: flex;
     grid-area: parrafo;
-    width: 700px;
+/*     width: 700px; */
     padding: 50px 100px;
 
 }
@@ -157,7 +157,7 @@ button {
 .imagen {
 
     grid-area: imagen;
-    width: 300px;
+/*     width: 300px; */
 }
 
 
@@ -168,7 +168,7 @@ button {
 }
 
 .img2 img {
-    width: 1200px;
+/*     width: 1200px; */
 } 
 
 .interlineado {
@@ -206,7 +206,7 @@ footer a:hover {
 }
 
 
-@media screen and (max-width: 480px) {
+/* @media screen and (max-width: 480px) {
     .body_index{
         grid-template-columns: 1fr;
         grid-template-areas: 
@@ -250,5 +250,4 @@ footer a:hover {
     .imagen {
         width: 1200px;
     }
-}
-
+} */
