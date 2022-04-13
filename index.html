@@ -12,8 +12,8 @@
 </head>
 <body class="body_index container-fluid">
     <header class="row header">
-            <a id="titulo" href="index.html" class="logo">桜 DARE</a>
-            <nav class="menu">
+            <a id="titulo" href="index.html" class="col-7 logo">桜 DARE</a>
+            <nav class="col-5 menu">
                 <ul class="menu">
                     <li><a href="index.html">PROYECTOS</a></li>
                     <li><a href="paginas/apartamentos.html">APARTAMENTOS</a></li>
@@ -27,18 +27,18 @@
 
     
     <section class="row img1">
-        <img src="img/PROYECTODARE.jpg">
+        <img class ="col-12" src="img/PROYECTODARE.jpg">
     </section>
 
-    <section class="referencia">
-            <h1 class="referencia--titulo h2">桜 DARE</h1>
-                <a class="referencia--telefono" href="tel:+584145555555">(+58)414-5555555</a>
-                <a class="referencia--contacto" href="paginas/contacto.html">CONTACTO</a>
-                <h6 class="vacio"></h6>
+    <section class="row referencia">
+            <h1 class="col-3 referencia--titulo h2">桜 DARE</h1>
+                <a class="col-3 referencia--telefono" href="tel:+584145555555">(+58)414-5555555</a>
+                <a class="col-3 referencia--contacto" href="paginas/contacto.html">CONTACTO</a>
+                <h6 class="col-3 vacio"></h6>
     </section>
 
-    <section class=" row parrafo interlineado">
-        <article>
+    <section class="row parrafo interlineado">
+        <article class="col-9" >
             <h2>桜 DARE</h2>
             <P>
             Extraordinario y revolucionario en visión. 
@@ -46,18 +46,16 @@
             un nuevo estándar para apartamentos de lujo.
             </P>
         </article>     
-        <img src="img/SALA DE ESTAR.jpg" class="imagen">
+        <img src="img/SALA DE ESTAR.jpg" class="col-3 imagen">
     </section>
 
-    <section >
-
-    </section>
 
     <section class="row img2">
-        <img src="img/COCINA.jpg">
+        <img class="col-12" src="img/COCINA.jpg">
     </section>
 
-    <section class="row section">
+    <div class="row" >
+    <section class="col-6 section">
         <article class="interlineado" >
             <p>Sala de Ventas:</p>
             <p>Av 00 con calle 00/Acarigua-Portuguesa</p>
@@ -72,7 +70,7 @@
         </article>
     </section>
     
-    <form action="/formulario" method="post" class="form">
+    <form action="/formulario" method="post" class="col-6 form">
         <h1>CONTACTO</h1>
         <label for="name">Nombre</label>
         <input class="formulario" type="text" id="name" name="name" placeholder="Nombre">
@@ -83,15 +81,15 @@
         <textarea class="formulario" name="mensaje" id="mensaje" placeholder="Mensaje" cols="30" rows="10"></textarea>
         <button type="submit">ENVIAR</button>
     </form>
-
+    </div>
 
 
     <footer class="row footer">
-        <section>
+        <section class="col-12" >
             <a href="#titulo">Volver al inicio</a>
             <a href="mailto:dare@gmail.com">dare@gmail.com</a>
         </section>
-        <p>Todos los derechos Reservados</p>
+        <p class="col-12" >Todos los derechos Reservados</p>
     </footer>
 
 
