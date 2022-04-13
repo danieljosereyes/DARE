@@ -5,27 +5,7 @@
 
     
 }
-
-/* .body_index {
-    margin: 0;
-    display: grid;
-    grid-template-columns: 300px 300px 300px 300px;
-    grid-template-rows: auto;
-    background-color: black;
-    grid-template-areas:
-    "header header header header"
-    "img1 img1 img1 img1"
-    "ref ref ref ref"
-    "parrafo parrafo parrafo imagen"
-    "img2 img2 img2 img2"
-    "section section form form"
-    "footer footer footer footer"
-    ;
-} */
-
-
-
-
+  
 #titulo {
     text-decoration: none;
     font-weight: bold;
@@ -90,7 +70,7 @@ li a:hover {
     padding-top: 1px;
     text-align: center;
     
-/*     justify-self: center; */
+
 } 
 
 .referencia--telefono {
@@ -134,25 +114,8 @@ button {
 /*     display: flex;
     grid-area: parrafo;
 /*     width: 700px; */
-    padding: 50px 100px;
+/*     padding: 50px 100px; */
 
-} */
-
-
-
-
-
-/* .img2 {
-    grid-area: img2;
-} */
-
-/* .img2 img {
-/*     width: 1200px; */
-}  */
-
-/* .interlineado {
-    line-height: 0.8;
-    
 } */
 
 .section {
@@ -183,50 +146,3 @@ footer a:hover {
     color:white
 
 }
-
-
-/* @media screen and (max-width: 480px) {
-    .body_index{
-        grid-template-columns: 1fr;
-        grid-template-areas: 
-        "header"
-        "img1"
-        "ref"
-        "parrafo"
-        "imagen"
-        "img2"
-        "section"
-        "form"
-        "footer"
-        ;
-    }
-
-    .referencia {
-        display: flex;
-        grid-area: ref;
-        flex-flow: column nowrap;
-        width: 1200px;
-    }
-
-    .referencia--titulo {
-        width: 1200px;
-    }
-
-    .referencia--telefono {
-        width: 1200px;
-    }
-
-    .referencia--contacto {
-        width: 1200px;
-    }
-    
-    .parrafo {
-        width: 1200px;
-        padding: 0;
-        text-align: center;
-    }
-
-    .imagen {
-        width: 1200px;
-    }
-} */
