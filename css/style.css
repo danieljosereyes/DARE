@@ -11,7 +11,7 @@
     display: grid;
     grid-template-columns: 300px 300px 300px 300px;
     grid-template-rows: auto;
-    
+    background-color: black;
     grid-template-areas:
     "header header header header"
     "img1 img1 img1 img1"
@@ -244,7 +244,7 @@ footer a:hover {
     .parrafo {
         width: 1200px;
         padding: 0;
-
+        text-align: center;
     }
 
     .imagen {
