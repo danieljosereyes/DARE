@@ -1,0 +1,25 @@
+#titulo {
+    text-decoration: none;
+    font-weight: bold;
+    margin: 10px 10px;
+}
+
+header {
+    grid-area: header;
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+        li {
+            list-style-type: none;
+            display: inline-block;            
+            margin: 10px 0;
+            a {
+                text-decoration: none;
+                transition: color 0.3s ease;
+                &:hover {
+                    color: $ColorTransicion;
+                }
+            }
+        }
+}
