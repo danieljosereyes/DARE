@@ -1,0 +1,14 @@
+footer {
+    grid-area: footer;
+    padding: 15px 0; 
+    text-align: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    a {
+        text-decoration: none;
+        transition: color 0.3s ease;
+        &:hover {
+            color: $ColorTransicion;
+        }
+    }
+}
