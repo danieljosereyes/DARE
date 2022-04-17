@@ -5,37 +5,52 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DARE CONSTRUCTORA</title>
-    <link rel="stylesheet" href="../css/style.css">
-</head>
-<body class="body__contacto">
-    <header>
-        <a id="titulo" href="../index.html">桜 DARE</a>
-    </header>
-
-    <nav>
-        <ul>
-            <li><a href="../index.html">PROYECTOS</a></li>
-            <li><a href="apartamentos.html">APARTAMENTOS</a></li>
-            <li><a href="casas.html">CASAS</a></li>
-            <li><a href="ubicacion.html">UBICACION</a></li>
-            <li><a href="contacto.html">CONTACTO</a></li>
-        </ul>
-    </nav>
     
-    <form action="/formulario" method="post">
-        <label for="name">Nombre</label>
-        <input type="text" id="name" name="name" placeholder="Nombre">
-        <label for="correo">Correo</label>
-        <input type="email" id="correo" name="correo" placeholder="Correo">
-        <label for="telefono">Telefono</label>
-        <input type="text" id="telefono" name="telefono" placeholder="Telefono">
-        <textarea name="mensaje" id="mensaje" placeholder="Mensaje" cols="30" rows="10"></textarea>
+    <link rel="stylesheet" href="../css/estilos.css">
+</head>
+<body class="body_contacto">
+    <header class="header">
+        <a id="titulo" href="index.html" class="logo">桜 DARE</a>
+        <nav class="menu">
+            <ul class="menu">
+                <li><a href="paginas/proyectos.html">PROYECTOS</a></li>
+                <li><a href="paginas/apartamentos.html">APARTAMENTOS</a></li>
+                <li><a href="paginas/casas.html">CASAS</a></li>
+                <li><a href="paginas/ubicacion.html">UBICACION</a></li>
+                <li><a href="paginas/contacto.html">CONTACTO</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section class="section">
+        <article class="interlineado" >
+            <p>Sala de Ventas:</p>
+            <p>Av 00 con calle 00/Acarigua-Portuguesa</p>
+            <p><a href="tel:+584145555555">tel.:(+58)414-5555555</a></p>
+            <a href="mailto:dare@gmail.com">dare@gmail.com</a>
+            <p>Promueve y Construye:</p>
+            <p>BANCO NACIONAL</p>
+            <p>Con el respaldo de:</p>
+            <p>BANCO CENTRAL</p>
+            <p>Diseñado por:</p>
+            <p>DARE CONSTRUCTORA</p>
+        </article>
+    </section>
+    
+    <form action="/formulario" method="post" class="form">
+        <h1>CONTACTO</h1>
+        <input class="formulario" type="text" id="name" name="name" placeholder="Nombre">
+        <input class="formulario" type="email" id="correo" name="correo" placeholder="Correo">
+        <input class="formulario" type="text" id="telefono" name="telefono" placeholder="Telefono">
+        <textarea class="formulario" name="mensaje" id="mensaje" placeholder="Mensaje" cols="30" rows="10"></textarea>
         <button type="submit">ENVIAR</button>
     </form>
 
-    <footer>
-        <a href="#titulo">Volver al inicio</a>
-        <a href="mailto:dare@gmail.com">dare@gmail.com</a>
+    <footer class="footer">
+        <section>
+            <a href="#titulo">Volver al inicio</a>
+            <a href="mailto:dare@gmail.com">dare@gmail.com</a>
+        </section>
         <p>Todos los derechos Reservados</p>
     </footer>
 

@@ -11,6 +11,12 @@
   grid-template-rows: auto;
   grid-template-areas: "header" "img1" "ref" "parrafo" "imagen" "img2" "section" "form" "footer"; }
 
+.body_contacto {
+  display: grid;
+  grid-template-columns: 480px;
+  grid-template-rows: auto;
+  grid-template-areas: "header" "section" "form" "footer"; }
+
 #titulo {
   text-decoration: none;
   font-weight: bold;
@@ -150,6 +156,9 @@ footer {
   .body_index {
     grid-template-columns: repeat(4, 341.5px);
     grid-template-areas: "header header header header" "img1 img1 img1 img1" "ref ref ref ref" "parrafo parrafo parrafo imagen" "img2 img2 img2 img2" "section section form form" "footer footer footer footer "; }
+  .body_contacto {
+    grid-template-columns: repeat(4, 341.5px);
+    grid-template-areas: "header header header header" "section section form form" "footer footer footer footer "; }
   .img1 img {
     width: 1366px; }
   .imagen img {
