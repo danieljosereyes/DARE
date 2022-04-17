@@ -9,8 +9,8 @@
 
 .body_index {
     display: grid;
-    grid-template-columns: 480px;
-    grid-template-rows: auto;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(9, auto);
     grid-template-areas: 
     "header"
     "img1"
@@ -24,13 +24,25 @@
     ;
 }
 
+.body_contacto {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, auto);
+    grid-template-areas: 
+    "header"
+    "section"
+    "form"
+    "footer"
+    ;
+}
+
 @import "header";
 
 
 .img1 {
     grid-area: img1;
         img {
-            width: 480px;
+            width: 100%;
         }
 }
 
@@ -39,10 +51,10 @@
     display: flex;
     flex-flow: column nowrap;
         h1 {
-            width: 480px;
+            width: 100%;
         }
         a {
-            width: 480px;
+            width: 100%;
         }
 }
 
@@ -79,14 +91,14 @@
 .imagen {
     grid-area: imagen;
         img {
-            width: 480px;
+            width: 100%;
         }
 }
 
 .img2 {
     grid-area: img2;
         img {
-            width: 480px;
+            width: 100%;
         }
 }
 
@@ -163,7 +175,7 @@ button {
 @media screen and (min-width:481px) {
 
     .body_index {
-        grid-template-columns: repeat(4, 341.5px);
+        grid-template-columns: repeat(4, 1fr);
         grid-template-areas:
         "header header header header"
         "img1 img1 img1 img1"
@@ -175,18 +187,28 @@ button {
     ;
     }
 
-    .img1 img{
-        width: 1366px;
+    .body_contacto {
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: auto auto auto;
+        grid-template-areas:
+        "header header header header"
+        "section section form form"
+        "footer footer footer footer "
+    ;
+    }
+
+    .img1 img {
+        width: 100%;
     }
 
 
     .imagen img{
-        width: 341.5px;
+        width: 100%;
     }
 
     .img2 img{
 
-        width: 1366px;
+        width: 100%;
     }
 
     .referencia {

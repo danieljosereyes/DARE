@@ -7,9 +7,15 @@
 
 .body_index {
   display: grid;
-  grid-template-columns: 480px;
-  grid-template-rows: auto;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(9, auto);
   grid-template-areas: "header" "img1" "ref" "parrafo" "imagen" "img2" "section" "form" "footer"; }
+
+.body_contacto {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(4, auto);
+  grid-template-areas: "header" "section" "form" "footer"; }
 
 #titulo {
   text-decoration: none;
@@ -25,7 +31,7 @@ header {
   header li {
     list-style-type: none;
     display: inline-block;
-    margin: 10px 0; }
+    margin: 10px 5px; }
     header li a {
       text-decoration: none;
       transition: color 0.3s ease; }
@@ -35,16 +41,16 @@ header {
 .img1 {
   grid-area: img1; }
   .img1 img {
-    width: 480px; }
+    width: 100%; }
 
 .referencia {
   grid-area: ref;
   display: flex;
   flex-flow: column nowrap; }
   .referencia h1 {
-    width: 480px; }
+    width: 100%; }
   .referencia a {
-    width: 480px; }
+    width: 100%; }
 
 .referencia--titulo {
   background-color: #cfcfcf;
@@ -74,12 +80,12 @@ header {
 .imagen {
   grid-area: imagen; }
   .imagen img {
-    width: 480px; }
+    width: 100%; }
 
 .img2 {
   grid-area: img2; }
   .img2 img {
-    width: 480px; }
+    width: 100%; }
 
 .section {
   grid-area: section;
@@ -148,13 +154,17 @@ footer {
 
 @media screen and (min-width: 481px) {
   .body_index {
-    grid-template-columns: repeat(4, 341.5px);
+    grid-template-columns: repeat(4, 1fr);
     grid-template-areas: "header header header header" "img1 img1 img1 img1" "ref ref ref ref" "parrafo parrafo parrafo imagen" "img2 img2 img2 img2" "section section form form" "footer footer footer footer "; }
+  .body_contacto {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto auto auto;
+    grid-template-areas: "header header header header" "section section form form" "footer footer footer footer "; }
   .img1 img {
-    width: 1366px; }
+    width: 100%; }
   .imagen img {
-    width: 341.5px; }
+    width: 100%; }
   .img2 img {
-    width: 1366px; }
+    width: 100%; }
   .referencia {
     flex-flow: row nowrap; } }
