@@ -13,13 +13,7 @@
     grid-template-rows: repeat(9, auto);
     grid-template-areas: 
     "header"
-    "img1"
-    "ref"
-    "parrafo"
-    "imagen"
-    "img2"
-    "section"
-    "form"
+    "main"
     "footer"
     ;
 }
@@ -38,16 +32,15 @@
 
 @import "header";
 
-
-.img1 {
-    grid-area: img1;
-        img {
-            width: 100%;
-        }
+main {
+    grid-area: main;
 }
 
+.img1 img {
+            width: 100%;
+        }
+
 .referencia {
-    grid-area: ref;
     display: flex;
     flex-flow: column nowrap;
         h1 {
@@ -82,28 +75,22 @@
 }
 
 .parrafo {
-    grid-area: parrafo;
     text-align: center;
     display: flex;
-    padding: 50px 100px;
+    flex-flow: column nowrap;
+
 }
 
-.imagen {
-    grid-area: imagen;
-        img {
+.imagen img {
             width: 100%;
         }
-}
 
-.img2 {
-    grid-area: img2;
-        img {
+.img2 img {
             width: 100%;
         }
-}
+
 
 .section {
-    grid-area: section;
     padding: 30px 10px;
     text-size-adjust: 1.6rem;
         article {
@@ -125,9 +112,8 @@ input {
     margin: 15px 30px;
     padding: 15px;    
     font-size: 0.875em;
-    color: rgb(209, 209, 209);
     outline:none;
-    border: solid 1px rgb(209, 209, 209);
+    border: solid 1px ;
     transition: all 0.3s ease-in-out;
         &:hover {
             background-color: #e2dedb5e;
@@ -168,50 +154,48 @@ button {
     flex-direction: column;
 }
 
-
-
 @import "footer";
 
-@media screen and (min-width:481px) {
-
+@media screen and (min-width: 480px){
     .body_index {
-        grid-template-columns: repeat(4, 1fr);
+        grid-template-columns: repeat(4, 1fr); 
         grid-template-areas:
         "header header header header"
-        "img1 img1 img1 img1"
-        "ref ref ref ref"
-        "parrafo parrafo parrafo imagen"
-        "img2 img2 img2 img2"
-        "section section form form"
-        "footer footer footer footer "
-    ;
-    }
-
-    .body_contacto {
-        grid-template-columns: repeat(4, 1fr);
-        grid-template-rows: auto auto auto;
-        grid-template-areas:
-        "header header header header"
-        "section section form form"
-        "footer footer footer footer "
-    ;
-    }
-
-    .img1 img {
-        width: 100%;
-    }
-
-
-    .imagen img{
-        width: 100%;
-    }
-
-    .img2 img{
-
-        width: 100%;
+        "main main main main"
+        "footer footer footer footer"
+        ;
     }
 
     .referencia {
+        display: flex;
         flex-flow: row nowrap;
+            h1 {
+                width: 25%;
+            }
+            a {
+                width: 25%;
+            }
     }
+    
+    .parrafo {
+        display: flex;
+        flex-flow: row nowrap;
+            article {
+                width: auto;
+            }
+    
+    }
+    
+    .imagen {
+        width: 45%;
+            }
+
+    .info {
+        display: flex;
+        flex-flow: row nowrap;
+        .form, .section {
+            width: 50%;
+        }
+    }
+
 }
