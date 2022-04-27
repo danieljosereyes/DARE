@@ -18,6 +18,14 @@ $redes: (
         display: $display;
         flex-flow: $direccion;  
 }
+@mixin grids--mobile {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(9, auto);
+}
+@mixin grids--desktop {
+    grid-template-columns: repeat(4, 1fr); 
+}
 
 @each $red, $color in $redes {
     .btn--#{$red} {
