@@ -1,3 +1,18 @@
+.btn--twitter {
+  background-color: #55acee; }
+
+.btn--facebook {
+  background-color: #3a5795; }
+
+.btn--whatsapp {
+  background-color: green; }
+
+.btn--pinterest {
+  background-color: red; }
+
+.btn--instagram {
+  background-color: violet; }
+
 * {
   background-color: black;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -46,27 +61,32 @@ main {
 
 .referencia {
   display: flex;
-  flex-flow: column nowrap; }
-  .referencia h1 {
-    width: 100%; }
-  .referencia a {
-    width: 100%; }
+  flex-flow: column nowrap;
+  /*         h1 {
+            width: 100%;
+        }
+        a {
+            width: 100%;
+        } */ }
 
 .referencia--titulo {
+  width: 100%;
+  text-align: center;
   background-color: #cfcfcf;
   color: black;
-  padding-top: 1px;
-  text-align: center; }
+  padding-top: 1px; }
 
 .referencia--telefono {
+  width: 100%;
+  text-align: center;
   background-color: grey;
-  padding-top: 5px;
-  text-align: center; }
+  padding-top: 5px; }
 
 .referencia--contacto {
+  width: 100%;
+  text-align: center;
   background-color: #2e2e2e;
-  padding-top: 5px;
-  text-align: center; }
+  padding-top: 5px; }
 
 .vacio {
   margin: 0; }
@@ -108,7 +128,6 @@ textarea {
   margin: 15px 30px;
   padding: 15px;
   font-size: 0.875em;
-  color: #d1d1d1;
   outline: none;
   border: solid 1px #d1d1d1;
   transition: all 0.3s ease-in-out; }
@@ -119,7 +138,6 @@ button {
   margin: 15px 30px;
   padding: 15px 0;
   font-size: 0.875em;
-  color: #d1d1d1;
   outline: none;
   border: solid 1px #d1d1d1;
   cursor: pointer;
