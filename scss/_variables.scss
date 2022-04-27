@@ -14,6 +14,10 @@ $redes: (
         pinterest: red,
         instagram: violet
 );
+@mixin despliege($display, $direccion) {
+        display: $display;
+        flex-flow: $direccion;  
+}
 
 @each $red, $color in $redes {
     .btn--#{$red} {

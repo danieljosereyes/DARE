@@ -42,14 +42,7 @@ main {
         }
 
 .referencia {
-    display: flex;
-    flex-flow: column nowrap;
-/*         h1 {
-            width: 100%;
-        }
-        a {
-            width: 100%;
-        } */
+    @include despliege(flex, row nowrap);
 }
 
 .referencia--titulo {
@@ -80,9 +73,8 @@ main {
 }
 
 .parrafo {
+    @include despliege(column, row nowrap);
     text-align: center;
-    display: flex;
-    flex-flow: column nowrap;
 }
 
 .imagen img {
@@ -130,9 +122,8 @@ button {
 }
 
 .form {
+    @include despliege(flex, column nowrap);
     padding: 15px;
-    display: flex;
-    flex-direction: column;
 }
 
 form h1 {
@@ -153,8 +144,7 @@ form h1 {
     }
 
     .referencia {
-        display: flex;
-        flex-flow: row nowrap;
+        @include despliege(flex, row nowrap);
             h1 {
                 width: 25%;
             }
@@ -164,8 +154,7 @@ form h1 {
     }
     
     .parrafo {
-        display: flex;
-        flex-flow: row nowrap;
+        @include despliege(flex, row nowrap);
             article {
                 width: auto;
             }
@@ -177,8 +166,7 @@ form h1 {
             }
 
     .info {
-        display: flex;
-        flex-flow: row nowrap;
+        @include despliege(flex, row nowrap);
         .form, .section {
             width: 50%;
         }

@@ -61,13 +61,7 @@ main {
 
 .referencia {
   display: flex;
-  flex-flow: column nowrap;
-  /*         h1 {
-            width: 100%;
-        }
-        a {
-            width: 100%;
-        } */ }
+  flex-flow: row nowrap; }
 
 .referencia--titulo {
   width: 100%;
@@ -92,9 +86,9 @@ main {
   margin: 0; }
 
 .parrafo {
-  text-align: center;
-  display: flex;
-  flex-flow: column nowrap; }
+  display: column;
+  flex-flow: row nowrap;
+  text-align: center; }
 
 .imagen img {
   width: 100%; }
@@ -124,9 +118,9 @@ button {
   cursor: pointer; }
 
 .form {
-  padding: 15px;
   display: flex;
-  flex-direction: column; }
+  flex-flow: column nowrap;
+  padding: 15px; }
 
 form h1 {
   text-align: center;
