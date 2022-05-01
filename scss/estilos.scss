@@ -18,14 +18,8 @@
     ;
 }
 
-.body_contacto {
-    @include grids--mobile;
-    grid-template-areas: 
-    "header"
-    "section"
-    "form"
-    "footer"
-    ;
+a {
+    color: $letras
 }
 
 @import "header";

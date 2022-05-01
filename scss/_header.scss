@@ -8,8 +8,6 @@ header {
     grid-area: header;
     position: sticky;
     top: 0;
-    display: flex;
-    justify-content: space-between;
         li {
             list-style-type: none;
             display: inline-block;            
@@ -22,4 +20,4 @@ header {
                 }
             }
         }
-}
+    }

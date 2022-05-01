@@ -26,11 +26,8 @@
   grid-template-rows: repeat(9, auto);
   grid-template-areas: "header" "main" "footer"; }
 
-.body_contacto {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: repeat(9, auto);
-  grid-template-areas: "header" "section" "form" "footer"; }
+a {
+  color: #d1d1d1; }
 
 #titulo {
   text-decoration: none;
@@ -40,9 +37,7 @@
 header {
   grid-area: header;
   position: sticky;
-  top: 0;
-  display: flex;
-  justify-content: space-between; }
+  top: 0; }
   header li {
     list-style-type: none;
     display: inline-block;
