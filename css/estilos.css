@@ -56,14 +56,15 @@ main {
 
 .referencia {
   display: flex;
-  flex-flow: row nowrap; }
+  flex-flow: column nowrap; }
 
 .referencia--titulo {
   width: 100%;
   text-align: center;
   background-color: #cfcfcf;
   color: black;
-  padding-top: 1px; }
+  padding-top: 1px;
+  margin: 0; }
 
 .referencia--telefono {
   width: 100%;
@@ -81,8 +82,8 @@ main {
   margin: 0; }
 
 .parrafo {
-  display: column;
-  flex-flow: row nowrap;
+  display: flex;
+  flex-flow: column nowrap;
   text-align: center; }
 
 .imagen img {
@@ -112,14 +113,16 @@ input, textarea, button {
 button {
   cursor: pointer; }
 
-.form {
+form {
   display: flex;
   flex-flow: column nowrap;
   padding: 15px; }
+  form h1 {
+    text-align: center;
+    padding: 15px; }
 
-form h1 {
-  text-align: center;
-  padding: 15px; }
+.ubicacion {
+  width: 100%; }
 
 footer {
   grid-area: footer;

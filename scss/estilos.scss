@@ -33,7 +33,7 @@ main {
         }
 
 .referencia {
-    @include despliege(flex, row nowrap);
+    @include despliege(flex, column nowrap);
 }
 
 .referencia--titulo {
@@ -42,6 +42,7 @@ main {
     background-color: rgb(207, 207, 207);
     color: black;
     padding-top: 1px;
+    margin: 0;
 } 
 
 .referencia--telefono {
@@ -64,7 +65,7 @@ main {
 }
 
 .parrafo {
-    @include despliege(column, row nowrap);
+    @include despliege(flex, column nowrap);
     text-align: center;
 }
 
@@ -110,14 +111,19 @@ button {
     cursor: pointer;
 }
 
-.form {
+form {
     @include despliege(flex, column nowrap);
     padding: 15px;
+         h1 {
+            text-align: center;
+            padding: 15px;
+        }
 }
 
-form h1 {
-    text-align: center;
-    padding: 15px;
+
+
+.ubicacion {
+    width: 100%;
 }
 
 @import "footer";
