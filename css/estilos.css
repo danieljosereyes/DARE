@@ -120,7 +120,7 @@ form {
 
 .proyectos--titulo {
   text-align: center;
-  margin-top: 25px; }
+  margin: 50px; }
 
 .proyectos--articulos {
   border: solid 1px #d1d1d1;
@@ -162,4 +162,22 @@ footer {
     display: flex;
     flex-flow: row nowrap; }
     .info .form, .info .section {
-      width: 50%; } }
+      width: 50%; }
+  .proyectos--articulos {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center; }
+    .proyectos--articulos section {
+      width: 35%; }
+      .proyectos--articulos section h2 {
+        margin-top: 0; }
+    .proyectos--articulos img {
+      width: 65%; }
+  .flex-direction_left {
+    display: flex;
+    flex-direction: row;
+    align-items: center; }
+  .flex-direction_right {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end; } }
