@@ -51,7 +51,7 @@ header {
 main {
   grid-area: main; }
 
-.img1 img {
+img {
   width: 100%; }
 
 .referencia {
@@ -86,12 +86,6 @@ main {
   flex-flow: column nowrap;
   text-align: center; }
 
-.imagen img {
-  width: 100%; }
-
-.img2 img {
-  width: 100%; }
-
 .section {
   padding: 30px 10px;
   text-size-adjust: 1.6rem; }
@@ -123,6 +117,16 @@ form {
 
 .ubicacion {
   width: 100%; }
+
+.proyectos--titulo {
+  text-align: center;
+  margin-top: 25px; }
+
+.proyectos--articulos {
+  border: solid 1px #d1d1d1;
+  cursor: pointer; }
+  .proyectos--articulos h2 {
+    margin-top: 20px; }
 
 footer {
   grid-area: footer;

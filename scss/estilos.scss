@@ -28,9 +28,9 @@ main {
     grid-area: main;
 }
 
-.img1 img {
-            width: 100%;
-        }
+img {
+    width: 100%;
+}
 
 .referencia {
     @include despliege(flex, column nowrap);
@@ -69,14 +69,6 @@ main {
     text-align: center;
 }
 
-.imagen img {
-            width: 100%;
-        }
-
-.img2 img {
-            width: 100%;
-        }
-
 .section {
     padding: 30px 10px;
     text-size-adjust: 1.6rem;
@@ -86,8 +78,8 @@ main {
             }
             p {
                 padding: 15px 10px;
-            }
-        }
+               }
+    }
 }
 
 input {
@@ -120,10 +112,21 @@ form {
         }
 }
 
-
-
 .ubicacion {
     width: 100%;
+}
+
+.proyectos--titulo {
+    text-align: center;
+    margin-top: 25px;
+}
+
+.proyectos--articulos {
+    border: solid 1px $bordes;
+    cursor: pointer;
+        h2 {
+            margin-top: 20px;
+    }
 }
 
 @import "footer";
@@ -166,5 +169,4 @@ form {
             width: 50%;
         }
     }
-
 }
