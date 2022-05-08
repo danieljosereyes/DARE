@@ -129,6 +129,19 @@ form {
     }
 }
 
+.apartamentos__articulos {
+    border: solid 1px $bordes;
+    cursor: pointer;
+    border-radius: 5%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    
+
+}
+
 @import "footer";
 
 @media screen and (min-width: 480px){
@@ -197,5 +210,18 @@ form {
         display: flex;
         flex-direction: column;
         align-items: flex-end;
+    }
+
+    .apartamentos {
+        display: flex;
+        justify-content: space-around;
+        height: 280px;
+        .apartamentos__articulos {
+            width: 20%;
+            img{
+                width: auto;
+                overflow: hidden;
+            }
+        }
     }
 }
