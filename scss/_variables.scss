@@ -23,6 +23,9 @@ $redes: (
     grid-template-columns: 1fr;
     grid-template-rows: repeat(9, auto);
 }
+@mixin grids--tablet {
+    grid-template-columns: repeat(3, 1fr); 
+}
 @mixin grids--desktop {
     grid-template-columns: repeat(4, 1fr); 
 }
