@@ -193,10 +193,13 @@ footer {
     align-items: flex-end; }
   .apartamentos {
     display: flex;
-    justify-content: space-around;
-    height: 280px; }
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    flex-direction: row; }
     .apartamentos .apartamentos__articulos {
-      width: 20%; }
-      .apartamentos .apartamentos__articulos img {
-        width: auto;
-        overflow: hidden; } }
+      width: 30%;
+      margin: 10px; } }
+
+@media screen and (min-width: 768px) {
+  .apartamentos .apartamentos__articulos {
+    width: 20%; } }
