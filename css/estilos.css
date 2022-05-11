@@ -128,6 +128,10 @@ form {
   .proyectos--articulos h2 {
     margin-top: 20px; }
 
+.apartamentos__titulo {
+  text-align: center;
+  margin: 50px; }
+
 .apartamentos__articulos {
   border: solid 1px #d1d1d1;
   cursor: pointer;
@@ -137,29 +141,29 @@ form {
   flex-direction: column;
   align-items: center;
   justify-content: flex-end; }
+  .apartamentos__articulos img {
+    overflow: hidden; }
 
-.footer {
+footer {
   grid-area: footer;
   padding: 15px 0;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  text-align: center; }
+  align-items: center; }
 
-.footer__redes {
-  width: 30px;
-  height: 30px;
-  margin: 15px;
-  float: left; }
-
-.footer__contacto a a {
+.footer__contacto a {
   text-decoration: none;
   transition: color 0.3s ease; }
-  .footer__contacto a a:hover {
+  .footer__contacto a:hover {
     color: white; }
 
 .footer__copiright p {
   margin: 0; }
+
+.footer__redes img {
+  width: 30px;
+  height: 30px;
+  margin: 15px; }
 
 @media screen and (min-width: 480px) {
   .body_index {
@@ -209,7 +213,10 @@ form {
     flex-direction: row; }
     .apartamentos .apartamentos__articulos {
       width: 30%;
-      margin: 10px; } }
+      margin: 10px;
+      height: 250px; }
+      .apartamentos .apartamentos__articulos img {
+        width: auto; } }
 
 @media screen and (min-width: 768px) {
   .apartamentos .apartamentos__articulos {

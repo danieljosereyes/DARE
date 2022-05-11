@@ -129,6 +129,11 @@ form {
     }
 }
 
+.apartamentos__titulo {
+    text-align: center;
+    margin: 50px;
+}
+
 .apartamentos__articulos {
     border: solid 1px $bordes;
     cursor: pointer;
@@ -138,8 +143,9 @@ form {
     flex-direction: column;
     align-items: center;
     justify-content: flex-end;
-    
-
+        img {
+            overflow: hidden
+        }
 }
 
 @import "footer";
@@ -220,6 +226,10 @@ form {
         .apartamentos__articulos {
             width: 30%;
             margin: 10px;
+            height: 250px;
+            img {                
+                width: auto;
+            }
         }
     } 
 }
