@@ -138,17 +138,28 @@ form {
   align-items: center;
   justify-content: flex-end; }
 
-footer {
+.footer {
   grid-area: footer;
   padding: 15px 0;
-  text-align: center;
-  flex-wrap: wrap;
-  flex-direction: column; }
-  footer a {
-    text-decoration: none;
-    transition: color 0.3s ease; }
-    footer a:hover {
-      color: white; }
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center; }
+
+.footer__redes {
+  width: 30px;
+  height: 30px;
+  margin: 15px;
+  float: left; }
+
+.footer__contacto a a {
+  text-decoration: none;
+  transition: color 0.3s ease; }
+  .footer__contacto a a:hover {
+    color: white; }
+
+.footer__copiright p {
+  margin: 0; }
 
 @media screen and (min-width: 480px) {
   .body_index {

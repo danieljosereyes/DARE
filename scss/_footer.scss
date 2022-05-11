@@ -1,9 +1,21 @@
-footer {
+.footer {
     grid-area: footer;
     padding: 15px 0; 
-    text-align: center;
-    flex-wrap: wrap;
+    display: flex;
     flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+}
+
+.footer__redes {
+    width: 30px;
+    height: 30px;
+    margin: 15px;
+    float: left;
+}
+
+.footer__contacto a {
     a {
         text-decoration: none;
         transition: color 0.3s ease;
@@ -11,4 +23,8 @@ footer {
             color: $ColorTransicion;
         }
     }
+}
+
+.footer__copiright p {
+    margin: 0;
 }
