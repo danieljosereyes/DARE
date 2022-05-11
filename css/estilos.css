@@ -193,7 +193,8 @@ footer {
     flex-direction: row-reverse;
     align-items: center; }
     .proyectos--articulos section {
-      width: 35%; }
+      width: 35%;
+      margin: 0 10px; }
       .proyectos--articulos section h2 {
         margin-top: 0; }
     .proyectos--articulos img {
